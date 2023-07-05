@@ -1,0 +1,256 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body,
+h1,
+h2,
+h5,
+p {
+  margin: 0;
+}
+
+body {
+  font-family: 'Work Sans', sans-serif;
+  color: #ffffff;
+}
+
+button {
+  cursor: pointer;
+}
+
+.section-auth {
+display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
+  background-color: rgba(43, 43, 43, 1);
+  min-height: 100vh;
+}
+
+.image-placeholder {
+  border-radius: 6px;
+  background-color: rebeccapurple;
+}
+
+.account-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 460px;
+}
+.account-form h1 {
+  font-size: 50px;
+  font-weight: 600;
+  line-height: 110%;
+  text-transform: capitalize;
+}
+
+.account-form p {
+  margin: 40px 0 20px;
+  font-size: 22px;
+  line-height: 160%;
+  text-transform: capitalize;
+}
+
+.form-fields {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 30px;
+  max-width: 290px;
+}
+.fields {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.form-fields input {
+  padding: 16px 20px;
+  border-radius: 12px;
+  color: #2b2b2b;
+}
+
+.btn-submit {
+  width: 100%;
+  height: 46px;
+  border: none;
+  border-radius: 20px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 140%;
+  color: #ffffff;
+  background-color: rgba(162, 89, 255, 1);
+}
+.btn-submit:hover {
+  background-color: rgb(145, 62, 253);
+}
+
+.nfts-atrists {
+  display: flex;
+  justify-content: center;
+  padding: 80px 0;
+
+  background-color: rgba(59, 59, 59, 1);
+}
+
+.nfts-atrists-content {
+  max-width: 1412px;
+  background-color: rgba(59, 59, 59, 1);
+}
+
+.but .nfts-atrists {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+  padding: 80px 115px;
+  background-color: #2b2b2b;
+}
+.nfts-atrists-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 60px;
+}
+
+.nfts-atrists-title {
+  width: fit-content;
+  font-weight: 600;
+  font-size: 38px;
+  line-height: 120%;
+  text-transform: capitalize;
+}
+
+.nfts-atrists-button {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 19px 50px;
+  border: 2px solid #a259ff;
+  border-radius: 20px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 140%;
+  color: #ffffff;
+  background-color: transparent;
+}
+.nfts-card img:hover {
+  animation: shake 0.5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes shake {
+  0% {
+    transform: translate(1px, 1px) rotate(0deg);
+  }
+  10% {
+    transform: translate(-1px, -2px) rotate(-1deg);
+  }
+  20% {
+    transform: translate(-3px, 0px) rotate(1deg);
+  }
+  30% {
+    transform: translate(3px, 2px) rotate(0deg);
+  }
+  40% {
+    transform: translate(1px, -1px) rotate(1deg);
+  }
+  50% {
+    transform: translate(-1px, 2px) rotate(-1deg);
+  }
+  60% {
+    transform: translate(-3px, 1px) rotate(0deg);
+  }
+  70% {
+    transform: translate(3px, 1px) rotate(-1deg);
+  }
+  80% {
+    transform: translate(-1px, -1px) rotate(1deg);
+  }
+  90% {
+    transform: translate(1px, 2px) rotate(0deg);
+  }
+  100% {
+    transform: translate(1px, -2px) rotate(-1deg);
+  }
+}
+.nfts-atrists-button:hover {
+  background-color: #c598ff;
+}
+
+.img-artist {
+  background-image: url('Keemun_fox_in_a_wardrobe_wearing_sunglasses_colorful_4k_artstat_f58642e8-2784-46e2-8ecd-c34701427dd9.png');
+}
+
+.nfts-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.nfts-card {
+  width: fit-content;
+  border-radius: 20px;
+  background-color: #2b2b2b;
+}
+
+.nfts-card:hover {
+  background-color: #464545;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+}
+.nfts-card-content {
+  padding: 20px 30px 25px;
+}
+
+.artist-info h5 {
+  margin-bottom: 5px;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 140%;
+}
+
+.artist-info p {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 24px;
+}
+
+.artist-info p span {
+  font-family: 'Space Mono', monospace;
+}
+
+.artist-info p img:hover {
+  transform: scale(1.25);
+}
+.additional-info {
+  display: flex;
+  justify-content: space-between;
+}
+
+.highest-bid {
+  text-align: right;
+}
+
+.price,
+.highest-bid {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.price-text,
+.highest-bid-text {
+  font-family: 'Space Mono';
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 110%;
+  color: #858584;
+}
+.price-value,
+.highest-bid-value {
+  font-family: 'Space Mono';
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+}
+
