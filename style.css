@@ -17,8 +17,22 @@ button {
   cursor: pointer;
 }
 
+iframe {
+  /* width: 100%;
+    max-width: 800px;
+    height: auto; */
+}
+
+.video-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+  background-color: rgba(43, 43, 43, 1);
+}
+
 .section-auth {
-display: flex;
+  display: flex;
   justify-content: center;
   align-items: center;
   gap: 60px;
@@ -37,6 +51,7 @@ display: flex;
   justify-content: center;
   max-width: 460px;
 }
+
 .account-form h1 {
   font-size: 50px;
   font-weight: 600;
@@ -58,6 +73,7 @@ display: flex;
   gap: 30px;
   max-width: 290px;
 }
+
 .fields {
   display: flex;
   flex-direction: column;
@@ -81,6 +97,7 @@ display: flex;
   color: #ffffff;
   background-color: rgba(162, 89, 255, 1);
 }
+
 .btn-submit:hover {
   background-color: rgb(145, 62, 253);
 }
@@ -105,6 +122,7 @@ display: flex;
   padding: 80px 115px;
   background-color: #2b2b2b;
 }
+
 .nfts-atrists-header {
   display: flex;
   justify-content: space-between;
@@ -125,7 +143,7 @@ display: flex;
   align-items: center;
   gap: 14px;
   padding: 19px 50px;
-  border: 2px solid #a259ff;
+  border: 2px solid #dec5ff;
   border-radius: 20px;
   font-weight: 600;
   font-size: 16px;
@@ -133,6 +151,7 @@ display: flex;
   color: #ffffff;
   background-color: transparent;
 }
+
 .nfts-card img:hover {
   animation: shake 0.5s;
   animation-iteration-count: infinite;
@@ -173,8 +192,9 @@ display: flex;
     transform: translate(1px, -2px) rotate(-1deg);
   }
 }
+
 .nfts-atrists-button:hover {
-  background-color: #c598ff;
+  background-color: #20172c;
 }
 
 .img-artist {
@@ -183,6 +203,7 @@ display: flex;
 
 .nfts-cards {
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
   gap: 30px;
 }
@@ -197,6 +218,7 @@ display: flex;
   background-color: #464545;
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
 }
+
 .nfts-card-content {
   padding: 20px 30px 25px;
 }
@@ -222,6 +244,7 @@ display: flex;
 .artist-info p img:hover {
   transform: scale(1.25);
 }
+
 .additional-info {
   display: flex;
   justify-content: space-between;
@@ -246,6 +269,7 @@ display: flex;
   line-height: 110%;
   color: #858584;
 }
+
 .price-value,
 .highest-bid-value {
   font-family: 'Space Mono';
@@ -254,3 +278,76 @@ display: flex;
   line-height: 140%;
 }
 
+@media screen and (max-width: 1200px) {
+  .account-form h1 {
+    font-size: 36px;
+  }
+
+  .account-form p {
+    font-size: 16px;
+  }
+
+  .section-auth {
+    flex-direction: column;
+    padding: 40px 0;
+  }
+
+  .form-fields {
+    max-width: 100%;
+  }
+
+  .fields {
+    justify-content: center;
+  }
+
+  .nfts-atrists {
+    padding: 80px 20px;
+  }
+
+  .image-placeholder {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 868px) {
+  .nfts-atrists-header {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .section-auth {
+    padding: 30px 30px;
+  }
+
+  .nfts-atrists-title {
+    font-size: 28px;
+  }
+
+  .image-placeholder {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+  }
+
+  .nfts-card {
+    width: 280px;
+  }
+
+  .nfts-card img {
+    width: 100%;
+    height: auto;
+  }
+
+  .artist-info p img {
+    width: 26px;
+  }
+}
+
+@media screen and (max-width: 
+  568px) {
+  .section-auth {
+    padding: 30px 10px;
+  }
+}
